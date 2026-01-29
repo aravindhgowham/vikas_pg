@@ -1,0 +1,4 @@
+"async-lru>=2.1.0"
+"asyncpg>=0.31.0"
+"psycopg2-binary>=2.9.11"
+"pydantic-settings>=2.12.0"
