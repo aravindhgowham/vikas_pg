@@ -10,7 +10,8 @@ with open("README.md", "r") as f:
 
 setup(
     name='vikas_pg',
-    version='0.0.1',
+    license="Apache-2.0",
+    version='1.0.0',
     python_requires=">=3.8,<3.14",
     packages=find_packages(),
 

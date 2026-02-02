@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aravindhgowham/vikas_pg/main/vikas_pg/images/logo.png" width="180">
+  <img src="https://raw.githubusercontent.com/aravindhgowham/vikas_pg/main/vikas_pg/images/logo.png">
 </p>
+
 # vikas_pg
 `vikas_pg` is a lightweight and light speed response 5x faster, async PostgreSQL library for Python built on `asyncpg`.  
 It provides **connection pooling** and easy-to-use methods for **SELECT, INSERT, UPDATE** operations with optional dynamic column fetching.
@@ -40,8 +41,8 @@ DB_USERNAME=postgres
 DB_PASSWORD=123456
 DB_SCHEMA=public
 DB_NAME=postgres
-max_connection=10
-min_connection=20
+max_connection=20
+min_connection=10
 ```
 
 Do not change the keys, vikas_pg relies on these exact variable names.
@@ -123,9 +124,9 @@ async def insert_operation():
         schema='public',
         values=[{
             'id': '001',
-            'name': 'vignesh',
+            'name': 'Lucifer',
             'type': 'software Engineer',
-            'place': 'kallakurichi,TamilNadu'
+            'place': 'california, United State'
         },
         {
             'id': '002',
@@ -181,7 +182,7 @@ async def update_operation():
         table='client',
         schema='public',
         values={
-            'name': 'Aravindh'
+            'name': 'Jhon'
         },
         where={
             'id': '002'
@@ -232,6 +233,8 @@ For best results, refer to the SELECT query example in this documentation.
 Keep connections open during application lifetime
 Reuse the same Accelerate instance across your application
 
+## License
+This project is licensed under the Apache License 2.0.
 
 ## Support
 For issues or feature requests, please contact the package maintainer or refer to the official documentation. 
